@@ -9,22 +9,17 @@
     <script src="node_modules/systemjs/dist/system.js"></script>
 </head>
 <body>
-<div id="app">Changed with jquery</div>
+<div id="app">Change it with jQuery</div>
 <script>
     // set our baseURL reference path
     SystemJS.config({
-        // map an import to an specific package
         map: {
-          "jquery": "node_modules/jquery/dist/jquery.min.js"
+            "jQuery": "node_modules/jquery/dist/jquery.min.js"
         },
         baseURL: '/',
-        packages: {
-          '/': {
-            defaultExtension: 'js'
-          }
-        }
+        defaultJSExtensions: true
     });
-    SystemJS.import('script.js');
+    SystemJS.import('app.js');
 </script>
 </body>
 </html>

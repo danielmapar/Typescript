@@ -1,11 +1,11 @@
 {
-  "name": "typescript",
+  "name": "typescript-sandbox",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc-watch script.ts & lite-server "
+    "start": "tsc -w --project ./ & lite-server "
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,12 @@
     "url": "https://github.com/danielmapar/Typescript/issues"
   },
   "homepage": "https://github.com/danielmapar/Typescript#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@types/jquery": "^3.3.1",
+    "jquery": "^3.3.1",
+    "systemjs": "^0.21.3",
+    "typescript": "^2.8.3"
+  },
   "devDependencies": {
     "lite-server": "^2.3.0",
     "tsc-watch": "^1.0.19"
